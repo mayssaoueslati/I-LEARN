@@ -1,74 +1,90 @@
-body{
+*{
+    margin : 0;
+    padding :0;
+    box-sizing: border-box;
+    font-family:'Poppins', 'sans-serif';
+}
+.hero {
+    width: 100%;
+    height: 100vh; 
+    background-image: url("C:/Users/pc-hp/Desktop/elearning/ph.webp");
+    background-position: center;
+    background-size: cover;
+    margin: 0; 
+    padding: 0; 
+    overflow: hidden;
+    position: fixed; 
+    top: 0;
+    left: 0;
+}
+nav{
+    padding: 10px 0;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    align-items:center;
+    justify-content:space-between;
+}
+.logo{
+    width : 140px;
+}
+nav ul li {
+    display : inline-block;
+    list-style:none;
+    margin: 10px 15px;
+}
+nav ul li a{
+    text-decoration:none;
+    color : #ececec;
+    font-weight: 400;
 
-    background: linear-gradient(135deg, #7e6de7, #955aec,#e138f5); /* Gradient background */
-    transition: background-color 0.3s ease; /* Transition property */
 
 }
+.login-btn{
+    text-decoration:none;
+    color : #ececec;
+    font-weight: 400;
+    margin-right:15px;
+}
+.btn{
+    display: inline-block;
+    text-decoration:none;
+    padding: 14px 30px;
+    color:rgb(199, 199, 199);
+    background-image: linear-gradient(45deg,#e11ab0,#e11ab0);
+    font-size:14px;
+    border-radius:30px;
+    border-radius:300;
 
-.box {
-    width: 500px; /* Adjust width */
-    height: 650px; /* Adjust height */
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Adding shadow */
-    background-color: #f5fafa;
-    
 }
-form{
-    height: 500px;
+.content{
+    margin-top: 30px;
+    max-width: 600px;
 }
-/* Adjusting input fields */
-input[type="text"],
-input[type="email"],
-input[type="password"] {
-    width: 100%; /* Adjust width as needed */
-    padding: 10px; /* Adjust padding as needed */
-    margin-bottom: 15px; /* Adjust margin as needed */
-    border: 1px solid #ccc; /* Border color */
-    border-radius: 5px; /* Border radius */
-    box-sizing: border-box; /* Ensure padding and border are included in the width */
+.content h1{
+    font-size:70px;
+    color:#dedede;
 }
-
-/* Adjusting select dropdowns */
-select {
-    width: 100%; /* Adjust width as needed */
-    padding: 10px; /* Adjust padding as needed */
-    margin-bottom: 15px; /* Adjust margin as needed */
-    border: 1px solid #ccc; /* Border color */
-    border-radius: 5px; /* Border radius */
-    box-sizing: border-box; /* Ensure padding and border are included in the width */
-}
-
-/* Adjusting buttons */
-button {
-    padding: 10px 20px; /* Adjust padding as needed */
-    background: linear-gradient(135deg, #7e6de7, #955aec,#e138f5); /* Button background color */
-    color: #fff; /* Button text color */
-    border: none; /* Remove border */
-    border-radius: 5px; /* Border radius */
-    cursor: pointer; /* Change cursor to pointer on hover */
-    width:90%;
-    display: block; /* Make the button a block-level element */
-    margin: 0 auto;
+.content p{
+    margin:30px 10px;
+    color:#dedede;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-/* Hover effect for buttons */
-button:hover {
-    background: linear-gradient(135deg, #50096f, #50096f, #50096f); /* Change background color on hover */
+
+.video-container {
+    position: fixed; 
+    top: 150;
+    right: 0; 
+    width: 50%; 
+    max-width: 800px; 
+    margin: 30px; 
+    border: 5px solid #dedede;
+    border-radius:10px;
 }
-h4{
-    margin-bottom: 0;
+
+
+.video-container video {
+    width: 100%; 
+    height: 50%; 
 }
-img{
-    height: 100px;
-    width: 100px;
-    display: block; /* Make the button a block-level element */
-    margin: 0 auto;
-}
-h1{
-    margin-top: 0;
-}
+
+
