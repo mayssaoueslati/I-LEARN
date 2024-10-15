@@ -10,7 +10,6 @@ if (isset($_POST['submit'])) {
     if ($userType === 'etudiant') {
         $studentName = $_POST["studentName"];
         $studentLastname = $_POST["studentLastname"];
-        // Validate and sanitize additional fields if necessary
     } else if ($userType === 'ensignant') {
         // Process teacher specific fields
     }
@@ -35,7 +34,6 @@ if (isset($_POST['submit'])) {
             $hash = password_hash($password, 
                                 PASSWORD_DEFAULT);
                 
-            // Password Hashing is used here. 
             $sql = "INSERT INTO signup(nom,prenom, email, password) VALUES('$nom','$prenom', '$email','$hash')";
     
             $result = mysqli_query($conn, $sql);
